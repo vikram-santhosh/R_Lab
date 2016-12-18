@@ -9,7 +9,7 @@ isBinary <- function(x){
 ####### B #########
 
 modified_isBinary <- function(x,allow.NA = FALSE){
-  if(allow.NA == TRUE){
+  if(allow.NA == FALSE){
     if( any( is.na(x)))
       return(FALSE)
     else
