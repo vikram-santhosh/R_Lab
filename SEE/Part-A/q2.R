@@ -2,7 +2,7 @@
 vector1 <- runif(100,10,20)
 
 ####### B #########
-l <- lapply(1:100, function(x) runif(length(vector1)))
+l <- lapply(vector1,function(x) runif(x))
 
 ####### C #########
 len <- vector()
